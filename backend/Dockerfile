@@ -7,7 +7,6 @@ RUN npm install --production
 
 COPY src ./src
 
-EXPOSE 3001
+EXPOSE 10000
 
-# Run migration then start server
-CMD node src/db/migrate.js && node src/index.js
+CMD echo "Starting migration..." && node src/db/migrate.js && echo "Migration done, starting server..." && node src/index.js

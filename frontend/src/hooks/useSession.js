@@ -135,7 +135,7 @@ export function useSession() {
     setStatusMsg("");
   }, []);
 
-  // ── Derived calculations ──────────────────────────────────────────────────
+  // Battery usage, cost and total land size calculations
   const totalBatteries = DEVICES.reduce((sum, d) => sum + (qty[d.id] ?? 0), 0);
   const autoTransformers = Math.floor(totalBatteries / 2);
 

@@ -92,7 +92,7 @@ export default function DevicePanel({
             </div>
         )}
 
-        {/* ── Save section ── */}
+        {/*Save section*/}
         <div className="session-section">
           <div className="panel-label">Session name</div>
           <input
@@ -118,7 +118,7 @@ export default function DevicePanel({
               </div>
           )}
 
-          {/* ── Load by ID ── */}
+          {/*Load by ID*/}
           <div className="panel-label" style={{ marginTop: 12 }}>
             Load a saved session
           </div>

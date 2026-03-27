@@ -4,7 +4,7 @@
 
 ```
 tesla-energy-layout-app/
-├── docker-compose.yml          # Run with one command
+├── docker-compose.yml        # Run with one command
 ├── README.md
 └── backend/
     ├── Dockerfile
@@ -13,10 +13,10 @@ tesla-energy-layout-app/
     └── src/
         ├── index.js          #Entry point to set up the environment variables and mount routes  
         ├── db/
-        │   ├── migrate.js    # setup index, and schema and create table for postgres
+        │   ├── migrate.js    # setup index, and schema and create table for postgreSQL
         │   ├── pool.js       # Setup an database connection
         └── models/
-        │   └── session.js    # Implement api function to run sql query to create and get                             variables
+        │   └── session.js    # Implement api function to run sql query to create and get variables
         └── routes/
         │   └── sessions.js   # Define API endpoints that frontend calls
 └── frontend/
@@ -31,11 +31,11 @@ tesla-energy-layout-app/
         ├── data/
         │   └── devices.js      # Setup battery device specs & constants
         ├── hooks/
-        │   └── useSession.js   # Update the state of session data if user triggers any create                         session, update session and load session logic 
+        │   └── useSession.js   # Update the state of session data if user triggers any create session, update session and load session logic 
         ├── components/
         │   ├── DevicePanel.jsx # List devices and choose the quantity in left panel
-        │   ├── StatsBar.jsx    # Summary of total battery chosen, energy output, total cost and total land                           size required
-        │   └── SiteLayout.jsx  # Visual layout to show the overall land size needed and do                            calculation to wrap into new row if exceed maxWidth
+        │   ├── StatsBar.jsx    # Summary of total battery chosen, energy output, total cost and total land size required
+        │   └── SiteLayout.jsx  # Visual layout to show the overall land size needed and do calculation to wrap into new row if exceed maxWidth
         └── api/
         │   └── sessions.js      # Call API endpoints to the backend
         

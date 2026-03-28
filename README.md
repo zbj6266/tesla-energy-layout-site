@@ -8,7 +8,7 @@ tesla-energy-layout-app/
 ├── README.md
 └── backend/
     ├── Dockerfile
-    ├── .env                  #Configure database url
+    ├── .env.example          #Configure database url and allow frontend localhost:8000 and api port
     ├── package.json
     └── src/
         ├── index.js          #Entry point to set up the environment variables and mount routes  
@@ -42,12 +42,16 @@ tesla-energy-layout-app/
 ```
 
 Run in local Command:
-Full stack:
+
+1. Clone the repo
+2. Copy .env.example to .env
+
+3.1 Full stack:
 ```bash
 docker-compose up --build
 ```
 
-Frontend:
+3.2 Frontend:
 ```bash
 cd frontend
 npm install

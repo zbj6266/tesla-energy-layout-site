@@ -32,7 +32,7 @@ async function migrate() {
   try {
     console.log("Running migrations...");
     await client.query(SQL);
-    console.log("✓ sessions table ready");
+    console.log("Sessions table ready");
   } catch (err) {
     console.error("Migration failed:", err);
     process.exit(1);

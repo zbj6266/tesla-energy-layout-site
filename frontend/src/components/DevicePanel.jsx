@@ -107,7 +107,7 @@ export default function DevicePanel({
             <button className="btn btn-primary" onClick={saveSession} disabled={isBusy}>
               {status === "saving" ? "Saving…" : sessionId ? "Update session" : "Save session"}
             </button>
-            <button className="btn btn-ghost" onClick={reset}>
+            <button className="btn btn-reset" onClick={reset}>
               Reset
             </button>
           </div>

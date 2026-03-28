@@ -41,6 +41,6 @@ app.use((err, _req, res, _next) => {
 
 // Start
 app.listen(PORT, () => {
-  console.log(`✓ Tesla Battery API running on http://localhost:${PORT}`);
-  console.log(`  Allowed origins: ${allowedOrigins.join(", ")}`);
+  console.log(`Tesla Battery API running on http://localhost:${PORT}`);
+  console.log(`Allowed origins: ${allowedOrigins.join(", ")}`);
 });

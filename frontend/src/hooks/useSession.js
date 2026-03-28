@@ -100,7 +100,7 @@ export function useSession() {
         session = await createSession(sessionName, qty);
         setSessionId(session.id);
         setSessionIdInUrl(session.id);
-        flash("saved", "Saved!");
+        flash("saved", "Saved");
       }
     } catch (err) {
       flash("error", `Save failed: ${err.message}`);

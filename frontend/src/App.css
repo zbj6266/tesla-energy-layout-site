@@ -300,7 +300,7 @@ body {
   color: black;
 }
 
-.btn-ghost {
+.btn-reset {
   background: transparent;
   color: var(--muted);
   border-color: transparent;
